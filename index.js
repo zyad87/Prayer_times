@@ -90,4 +90,12 @@ function getporptytimecity(cityname){
   getporptytimecity("Makkah al Mukarramah")
 
 
+  function felltime(id, time) {
+    const element = document.getElementById(id);
+    element.classList.remove("animate__pulse", "animate__bounceIn");
+    setTimeout(() => {
+        element.innerHTML = time;
+        element.classList.add("animate__pulse", "animate__bounceIn");
+    }, 100);
+}
 
