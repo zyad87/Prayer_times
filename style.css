@@ -1,0 +1,91 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+
+    background-color: #f3f3f3;
+
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #e0c3fc, #8ec5fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.prayer-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.prayer-time {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* تحسين الظل */
+    margin: 15px;
+    transition: all 0.3s ease; /* إضافة تأثير انتقالي */
+}
+
+.prayer-time:hover {
+    transform: scale(1.05); /* تكبير الوقت عند تمرير الماوس عليه */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* تحسين الظل عند التحويل */
+}
+
+.prayer-time h2 {
+    margin: 0;
+    font-size: 2em; /* زيادة حجم الوقت */
+    color: #333;
+}
+
+.prayer-time p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666; /* تغيير لون النص */
+}
+#date_s {
+    font-style: italic; /* تغيير نمط الخط للتاريخ */
+}
+
+
+.select-background {
+    background-color: rgba( 255, 255, 255, 0.65 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    transition: all 0.8s ease; /* تأثير الانتقال لتغيير الخلفية بشكل سلس */
+}
+
+
