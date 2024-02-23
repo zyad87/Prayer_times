@@ -61,12 +61,12 @@ function getporptytimecity(cityname){
     felltime("timeisha",timings.Isha)
 
 
-    const wooked = response.data.data.date.hijri.weekday.ar
+    const wooked = response.data.data.date.hijri.day
     const yeared = response.data.data.date.hijri.year
-    const monthed = response.data.data.date.hijri.month.number
+    const monthed = response.data.data.date.hijri.month.ar
 
     document.getElementById("date_s").innerHTML = `
-    <h4>${wooked} ${monthed} / ${yeared}</h4>
+    <h4>${wooked} ${monthed}   ${yeared}</h4>
 
     `
     console.log(response);
@@ -87,15 +87,16 @@ function getporptytimecity(cityname){
 
 
 
-  getporptytimecity("Makkah al Mukarramah")
 
 
   function felltime(id, time) {
     const element = document.getElementById(id);
-    element.classList.remove("animate__pulse", "animate__bounceIn");
+    element.classList.remove("animate__animated", "animate__bounceIn");
     setTimeout(() => {
         element.innerHTML = time;
-        element.classList.add("animate__pulse", "animate__bounceIn");
+        element.classList.add("animate__animated", "animate__bounceIn");
     }, 100);
 }
 
+
+getporptytimecity("Makkah al Mukarramah")

@@ -76,9 +76,7 @@ h1 {
     font-size: 1.2em;
     color: #666; /* تغيير لون النص */
 }
-#date_s {
-    font-style: italic; /* تغيير نمط الخط للتاريخ */
-}
+
 
 
 .select-background {
